@@ -6,7 +6,7 @@ Subject: [PATCH 1/2] Revert "runtime: check and fail early with a message if
 
 This reverts commit 35e84546d7c3cc599dd5bf31ad86bf8d3d841d04.
 
-Upstream Status: Inappropriate [git revert]
+Upstream Status: Inappropriate
 ---
  src/runtime/asm_386.s | 42 ------------------------------------------
  1 file changed, 42 deletions(-)
