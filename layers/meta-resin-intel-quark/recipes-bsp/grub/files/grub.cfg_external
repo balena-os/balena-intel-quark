@@ -1,0 +1,9 @@
+# Automatically created by OE
+serial --unit=0 --speed=115200 --word=8 --parity=no --stop=1
+default 1
+timeout 0
+
+title Resin boot from SD card
+        root (hd0,0)
+        kernel /vmlinuz root=/dev/ram0 LABEL=boot console=ttyS1,115200n8 earlycon=uart8250,mmio32,$EARLY_CON_ADDR_REPLACE,115200n8 reboot=efi,warm apic=debug rw debugshell=5 rootwait
+        initrd /initramfs
