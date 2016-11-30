@@ -6,7 +6,7 @@ Subject: [PATCH 1/2] Revert "runtime: check and fail early with a message if
 
 This reverts commit 35e84546d7c3cc599dd5bf31ad86bf8d3d841d04.
 
-Upstream Status: Inappropriate
+Upstream Status: Pending
 ---
  src/runtime/asm_386.s | 42 ------------------------------------------
  1 file changed, 42 deletions(-)
@@ -17,7 +17,7 @@ index 4181859..942446e 100644
 +++ b/src/runtime/asm_386.s
 @@ -26,32 +26,6 @@ TEXT runtime·rt0_go(SB),NOSPLIT,$0
  	MOVL	SP, (g_stack+stack_hi)(BP)
- 	
+
  	// find out information about the processor we're on
 -#ifdef GOOS_nacl // NaCl doesn't like PUSHFL/POPFL
 -	JMP 	has_cpuid
@@ -57,18 +57,18 @@ index 4181859..942446e 100644
 -	TESTL	$(1<<23), DX	// MMX
 -	JZ 	bad_proc
 -
- nocpuinfo:	
- 
- 	// if there is an _cgo_init, call it to let it
+	// Load EAX=7/ECX=0 cpuid flags
+	CMPL	SI, $7
+	JLT	nocpuinfo
 @@ -160,17 +129,6 @@ ok:
  	INT $3
  	RET
- 
+
 -DATA	bad_proc_msg<>+0x00(SB)/8, $"This pro"
 -DATA	bad_proc_msg<>+0x08(SB)/8, $"gram can"
 -DATA	bad_proc_msg<>+0x10(SB)/8, $" only be"
 -DATA	bad_proc_msg<>+0x18(SB)/8, $" run on "
--DATA	bad_proc_msg<>+0x20(SB)/8, $"processe"
+-DATA	bad_proc_msg<>+0x20(SB)/8, $"processo"
 -DATA	bad_proc_msg<>+0x28(SB)/8, $"rs with "
 -DATA	bad_proc_msg<>+0x30(SB)/8, $"MMX supp"
 -DATA	bad_proc_msg<>+0x38(SB)/4, $"ort."
@@ -77,7 +77,7 @@ index 4181859..942446e 100644
 -
  DATA	runtime·mainPC+0(SB)/4,$runtime·main(SB)
  GLOBL	runtime·mainPC(SB),RODATA,$4
- 
--- 
+
+--
 2.10.0
 
