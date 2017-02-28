@@ -2,13 +2,13 @@
 # intel-quark
 #
 
-IMAGE_FSTYPES_append = " resin-sdcard"
+IMAGE_FSTYPES_append = " resinos-img"
 
 # Do not support live USB stick
 NOISO = "1"
 NOHDD = "1"
 
-# Customize resin-sdcard
+# Customize resinos-img
 RESIN_IMAGE_BOOTLOADER = "grub-efi"
 RESIN_BOOT_PARTITION_FILES = " \
     gummibootia32.efi:/EFI/BOOT/grub.efi \
