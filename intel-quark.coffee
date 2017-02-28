@@ -33,9 +33,9 @@ module.exports =
 	yocto:
 		machine: 'intel-quark'
 		image: 'resin-image-flasher'
-		fstype: 'resin-sdcard'
+		fstype: 'resinos-img'
 		version: 'yocto-jethro'
-		deployArtifact: 'resin-image-flasher-intel-quark.resin-sdcard'
+		deployArtifact: 'resin-image-flasher-intel-quark.resinos-img'
 		compressed: true
 
 	configuration:
