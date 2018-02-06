@@ -12,7 +12,7 @@ module.exports =
 	slug: 'cybertan-ze250'
 	aliases: [ 'ZE250' ]
 	name: 'Cybertan ZE250'
-	arch: 'i386'
+	arch: 'i386-nlp'
 	state: 'preview'
 
 	stateInstructions:
