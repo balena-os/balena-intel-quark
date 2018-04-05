@@ -13,7 +13,7 @@ module.exports =
 	aliases: [ 'ZE250' ]
 	name: 'Cybertan ZE250'
 	arch: 'i386'
-	state: 'preview'
+	state: 'discontinued'
 
 	stateInstructions:
 		postProvisioning: postProvisioningInstructions
