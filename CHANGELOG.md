@@ -1,6 +1,8 @@
 Change log
 -----------
 
+# v2.0.0+rev1 - 2018-04-05
+
 * Discontinue intel-quark [Andrei]
 
 # v2.0.0-beta12.rev2 - 2018-04-05
