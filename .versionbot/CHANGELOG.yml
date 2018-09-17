@@ -1,3 +1,32 @@
+- commits:
+    - subject: Add a parsable representation of the changelog
+      hash: 622980f24fa6ea1d9ae0c921d804a9f81b19f16f
+      body: |
+        This file allows other components to uniquely parse the information that
+        is contained in the changelog. It will be automatically managed by
+        versionist by appending the new commits on top. This is needed to
+        provide nested-changelogs.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Giovanni Garufi <giovanni@resin.io>
+        signed-off-by: Giovanni Garufi <giovanni@resin.io>
+        Changelog-entry: Add a parsable representation of the changelog
+        changelog-entry: Add a parsable representation of the changelog
+      author: Giovanni Garufi
+    - subject: Add versionist support
+      hash: 775a8761971673b0fbe4353240f282d87c6aeacf
+      body: |
+        Also adds package.json to include the dependencies required in
+        versionist.conf.js
+      footer:
+        Changelog-entry: Add versionist support
+        changelog-entry: Add versionist support
+        Signed-off-by: Giovanni Garufi <giovanni@resin.io>
+        signed-off-by: Giovanni Garufi <giovanni@resin.io>
+      author: Giovanni Garufi
+  version: 2.0.2-beta.8
+  date: 2018-09-17T13:50:27.952Z
 - version: v2.0.0+rev1
   date: 2018-04-04T22:00:00.000Z
   commits:

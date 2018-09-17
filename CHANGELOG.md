@@ -1,6 +1,12 @@
 Change log
 -----------
 
+# v2.0.2-beta.8
+## (2018-09-17)
+
+* Add a parsable representation of the changelog [Giovanni Garufi]
+* Add versionist support [Giovanni Garufi]
+
 # v2.0.0+rev1 - 2018-04-05
 
 * Discontinue intel-quark [Andrei]
