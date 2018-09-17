@@ -1,0 +1,44 @@
+- version: v2.0.0+rev1
+  date: 2018-04-04T22:00:00.000Z
+  commits:
+    - subject: 'Discontinue intel-quark [Andrei]'
+- version: v2.0.0-beta12.rev2
+  date: 2018-04-04T22:00:00.000Z
+  commits:
+    - subject: 'Bump resin-yocto-scripts to current HEAD [Andrei]'
+- version: v2.0.0-beta12.rev1
+  date: 2017-02-26T23:00:00.000Z
+  commits:
+    - subject: 'Bump resin-yocto-scripts to current HEAD [Andrei]'
+    - subject: 'meta-resin: Bump to 2.0.0-beta12 [Andrei]'
+- version: v2.0.0-beta11.rev1
+  date: 2017-02-14T23:00:00.000Z
+  commits:
+    - subject: 'Update meta-resin to v2.0.0-beta.11 [Andrei]'
+- version: v2.0.0-beta10.rev1
+  date: 2017-02-13T23:00:00.000Z
+  commits:
+    - subject: 'Update meta-resin to v2.0.0-beta.10 [Andrei]'
+- version: v2.0.0-beta.9
+  date: 2017-02-07T23:00:00.000Z
+  commits:
+    - subject: 'Update meta-resin to v2.0-beta.9 [Andrei]'
+- version: v2.0.0-beta.8
+  date: 2017-01-26T23:00:00.000Z
+  commits:
+    - subject: 'Update meta-resin to v2.0-beta.8 [Andrei]'
+    - subject: 'Update resin-yocto-scripts to HEAD of the master branch [Florin]'
+- version: v2.0.2-beta.7
+  date: 2016-12-04T23:00:00.000Z
+  commits:
+    - subject: 'Update meta-resin to v2.0-beta.7 [Florin]'
+- version: v2.0.2-beta.6
+  date: 2016-12-04T23:00:00.000Z
+  commits:
+    - subject: 'Update meta-resin to v2.0-beta.6 [Andrei]'
+    - subject: 'Fix patchset for go 1.7.3 [Theodor]'
+- version: v2.0.1-beta.5
+  date: 2016-11-30T00:00:00.000Z
+  commits:
+    - subject: 'Update meta-resin to v2.0-beta.5 [Andrei]'
+    - subject: 'Initial board release [Theodor]'
